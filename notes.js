@@ -1,4 +1,6 @@
 const fs = require('fs')
+const chalk = require('chalk')
+
 console.log('notes.js')
 
 const getNotes = function () {
@@ -32,7 +34,16 @@ const removeNote = function (title) {
     const notesToSave = notes.filter(function (note) {
         return note.title !== title
     })
-    saveNotes(notesToSave)
+
+    if (notes.length > notesToSave.length) {
+        console.log(chalk.green.inverse("Notes removed"))
+        saveNotes(notesToSave)
+    }
+    else {
+        console.log(chalk.inverse.red("nOtes not in list to remove"))
+        saveNotes(notes)
+
+    }
 }
 
 
