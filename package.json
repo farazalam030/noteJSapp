@@ -1,0 +1,24 @@
+{
+  "name": "notejsapp",
+  "version": "1.0.0",
+  "description": "Notes App tutorials",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farazalam030/noteJSapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farazalam030/noteJSapp/issues"
+  },
+  "homepage": "https://github.com/farazalam030/noteJSapp#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "validator": "^13.5.2",
+    "yargs": "^16.2.0"
+  }
+}
